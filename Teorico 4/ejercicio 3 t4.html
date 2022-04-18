@@ -9,31 +9,115 @@
     <style>
         .box{
             border-radius: 5px;
-            background-color: #c621f3;
+            background-color: #ea9cff;
             border-color: black;  
-            padding: 20px;
             margin: 20px;
             box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+            width: auto;
+            max-width: 25%;
         }
         .box:hover{
             box-shadow: 6px 12px 12px rgba(0, 0, 0, 0.5);
         }
-        header{
+        .header{
             height: 40px;
             width: auto;
+            padding: 20px;
         }
+        .footer{
+            padding: 20px;
+        }
+        .body{
+            padding: 20px;
+        }
+        button{
+            text-align: right;
+        }
+        .contenedor{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        @media screen and (max-width: 1400px){ /*entre 1400 y 1000*/
+            .box{
+                border-radius: 5px;
+                background-color: #ea9cff;
+                border-color: black;  
+                margin: 20px;
+                box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+                width: auto;
+                max-width: 30%;
+                align-content: space-around;
+                justify-content: space-around;
+            }
+        }
+
+        @media screen and (max-width: 1000px){ /*entre 1000 y 600*/
+            .box{
+                border-radius: 5px;
+                background-color: #ea9cff;
+                border-color: black;  
+                margin: 20px;
+                box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+                width: auto;
+                max-width: 50%;
+            }
+        }
+        @media screen and (max-width: 600px){ /*max de 600*/
+            .box{
+                border-radius: 5px;
+                background-color: #ea9cff;
+                border-color: black;  
+                margin: 20px;
+                box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+                width: auto;
+                max-width: 100%;
+            }
+        }
+
     </style>
 </head>
 
-<header class="box">
-
-</header>
-
-<body class="box">
-    
+<body>
+    <div class="contenedor"> <!-- contenedor-->
+        <div class="box"> <!-- card 1-->
+            <div class="header"></div> <!-- header-->
+            <div class="body"></div> <!-- body-->
+            <div class="footer"> <!-- footer-->
+                <button>Uno</button>
+                <button>Dos</button>
+                <button>Tres</button>
+            </div> 
+        </div>
+        <div class="box"> <!-- card 2-->
+            <div class="header"></div> <!-- header-->
+            <div class="body"></div> <!-- body-->
+            <div class="footer"> <!-- footer-->
+                <button>Uno</button>
+                <button>Dos</button>
+                <button>Tres</button>
+            </div> 
+        </div>
+        <div class="box"> <!-- card 3-->
+            <div class="header"></div> <!-- header-->
+            <div class="body"></div> <!-- body-->
+            <div class="footer"> <!-- footer-->
+                <button>Uno</button>
+                <button>Dos</button>
+                <button>Tres</button>
+            </div> 
+        </div>
+        <div class="box"> <!-- card 4-->
+            <div class="header"></div> <!-- header-->
+            <div class="body"></div> <!-- body-->
+            <div class="footer"> <!-- footer-->
+                <button>Uno</button>
+                <button>Dos</button>
+                <button>Tres</button>
+            </div> 
+        </div>
+    </div>
 </body>
 
-<footer class="box">
-
-</footer>
 </html>
